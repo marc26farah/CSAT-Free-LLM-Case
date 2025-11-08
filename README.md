@@ -24,15 +24,13 @@ This repo contains a single Colab-ready notebook that builds a **French CSAT sen
   - `csat ≥ 4 → 2 (Positive)`
 - **4-class (toggle in the notebook)**
   - Same as above, plus
-  - `Mixed-Positive (3)` when **score is high but text contains negative cues**  
-    *(heuristics shown in the notebook; adjustable keyword lists)*
+  - `Mixed-Positive (3)` when **score is high but text contains negative cues**      
 
 > You can switch between 3-class and 4-class by changing the mapping cell; the notebook trains/evaluates accordingly, and saves separate checkpoints/folders.
 
 ## What you get
 - Trained CamemBERT model weights (saved to a folder)
 - Evaluation: per-class precision/recall/F1, accuracy, macro-F1, confusion matrix
-- Optional regex topic hints (separate from sentiment)
 
 ## Notes & caveats
 - **Score/text mismatches** are common in CSAT; the 4-class variant helps isolate those “positive-but-problematic” cases.
@@ -41,6 +39,4 @@ This repo contains a single Colab-ready notebook that builds a **French CSAT sen
 
 ## License / attribution
 - Fine-tunes Hugging Face **CamemBERT** (French RoBERTa).
-- Code for research/demo use.
-
-**Questions?** Open an issue or contact me.
+- Code for Case submission
