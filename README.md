@@ -8,7 +8,6 @@ This repo contains a single Colab-ready notebook that builds a **French CSAT sen
   - **4-class (optional):** `0=Negative`, `1=Neutral`, `2=Positive`, `3=Mixed-Positive`  
     *(“Mixed-Positive” captures positive overall score but text with issues / warnings)*
 - Fine-tune CamemBERT and evaluate (accuracy, macro-F1, confusion matrix)
-- Optional lightweight topic hints via regex keywords (billing, network, support, …)
 - Fully local (no external API)
 
 ## Quick start
